@@ -64,6 +64,7 @@ def service():
     while True:
         print('=*'*60)
         print('-----WELCOME TO THIS ATM-------')
+        print('-----Here the Choices Available in our Service-------')    
         print('Enter 1: Deposit')
         print('Enter 2: Withdraw')
         print('Enter 3: Check balance')

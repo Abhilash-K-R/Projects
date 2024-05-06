@@ -33,7 +33,7 @@ def sqrt ():
     a=int(input('Enter the valeu : '))
     return a**(1/2)
 
-
+#options to be shown to user
 print("Select operation:")
 print("1. Addition")
 print("2. Subtract")

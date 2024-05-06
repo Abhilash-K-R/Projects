@@ -1,39 +1,56 @@
 # mini project on Calculator
 
-def add(a,b):
-    return a+b
-def sub(a,b):
-    return a-b
-def mul(a,b):
-    return a*b
-def true_div (a,b):
-    if b==0:
+def add(a, b):
+    return a + b
+
+
+def sub(a, b):
+    return a - b
+
+
+def mul(a, b):
+    return a * b
+
+
+def true_div(a, b):
+    if b == 0:
         return "Error! Division by Zero"
     else:
-        return a/b
-def floor_div (a,b):
-    if b==0:
+        return a / b
+
+
+def floor_div(a, b):
+    if b == 0:
         return "Error! Division by Zero"
     else:
-        return a//b
+        return a // b
+
+
 def exponentiate(x, y):
     return x ** y
-def mod (a,b):
-    if b==0:
-        return"Error! Division by Zero"
-    else: 
-        return a%b
-def fact():
-    a=int(input('Enter the value : '))
-    fact=1
-    for i in range(1,a+1):
-        fact*=i
-    return fact
-def sqrt ():
-    a=int(input('Enter the valeu : '))
-    return a**(1/2)
 
-#options to be shown to user
+
+def mod(a, b):
+    if b == 0:
+        return "Error! Division by Zero"
+    else:
+        return a % b
+
+
+def fact():
+    a = int(input('Enter the value : '))
+    fact = 1
+    for i in range(1, a + 1):
+        fact *= i
+    return fact
+
+
+def sqrt():
+    a = int(input('Enter the valeu : '))
+    return a ** (1 / 2)
+
+
+# options to be shown to user
 print("Select operation:")
 print("1. Addition")
 print("2. Subtract")
@@ -49,7 +66,11 @@ print("0. Exit")
 while True:
     choice = input("Enter choice (0-9): ")
 
-    if choice in ('1', '2', '3', '4', '5','6','7'):
+    if choice == '0':
+        print("Exiting the calculator.")
+        break
+
+    elif choice in ('1', '2', '3', '4', '5', '6', '7'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -68,17 +89,16 @@ while True:
         elif choice == '7':
             print("Result:", mod(num1, num2))
 
-    elif choice in ('8', '9'):
-        
+        elif choice in ('8', '9'):
 
-        if choice == '8':
-            print("Result:", fact())
-        elif choice == '9':
-            print("Result:", sqrt())
+            if choice == '8':
+                print("Result:", fact())
+            elif choice == '9':
+                print("Result:", sqrt())
 
     else:
-        print("Invalid Input")
+        print("Invalid choice")
 
-    another_calculation = input("Do you want to perform another calculation? (yes/no): ")
-    if another_calculation.lower() not in 'yes':
-        break
+        another_calculation = input("Do you want to perform another calculation? (yes/no): ")
+        if another_calculation.lower() not in 'yes':
+            break

@@ -71,30 +71,36 @@ while True:
         break
 
     elif choice in ('1', '2', '3', '4', '5', '6', '7'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        try: 
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+    
+            if choice == '1':
+                print("Result:", add(num1, num2))
+            elif choice == '2':
+                print("Result:", sub(num1, num2))
+            elif choice == '3':
+                print("Result:", mul(num1, num2))
+            elif choice == '4':
+                print("Result:", true_div(num1, num2))
+            elif choice == '5':
+                print("Result:", floor_div(num1, num2))
+            elif choice == '6':
+                print("Result:", exponentiate(num1, num2))
+            elif choice == '7':
+                print("Result:", mod(num1, num2))
+         except ValueError:
+                print("Error! Please enter valid numbers.")
 
-        if choice == '1':
-            print("Result:", add(num1, num2))
-        elif choice == '2':
-            print("Result:", sub(num1, num2))
-        elif choice == '3':
-            print("Result:", mul(num1, num2))
-        elif choice == '4':
-            print("Result:", true_div(num1, num2))
-        elif choice == '5':
-            print("Result:", floor_div(num1, num2))
-        elif choice == '6':
-            print("Result:", exponentiate(num1, num2))
-        elif choice == '7':
-            print("Result:", mod(num1, num2))
-
-        elif choice in ('8', '9'):
-
+    
+    elif choice in ('8', '9'):
+        try:
             if choice == '8':
-                print("Result:", fact())
+                    print("Result:", fact())
             elif choice == '9':
-                print("Result:", sqrt())
+                    print("Result:", sqrt())
+        except ValueError:
+                print("Error! Please enter valid numbers.")
 
     else:
         print("Invalid choice !  Please enter the Choice from the Menu Only")

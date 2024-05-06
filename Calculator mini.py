@@ -97,7 +97,7 @@ while True:
                 print("Result:", sqrt())
 
     else:
-        print("Invalid choice !  Please enter the ")
+        print("Invalid choice !  Please enter the Choice from the Menu Only")
 
         another_calculation = input("Do you want to perform another calculation? (yes/no): ")
         if another_calculation.lower() not in 'yes':

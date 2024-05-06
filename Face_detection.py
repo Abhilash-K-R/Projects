@@ -1,5 +1,5 @@
 #Face recognition model
-
+#mini project
 #import necessary modules
 from google.colab.patches import cv2_imshow
 import cv2

@@ -44,9 +44,10 @@ print("6. Exponentiate")
 print("7. Modulus")
 print("8. Factorial ")
 print("9. Square Root")
+print("0. Exit")
 
 while True:
-    choice = input("Enter choice (1/2/3/4/5/6/7/8/9): ")
+    choice = input("Enter choice (0-9): ")
 
     if choice in ('1', '2', '3', '4', '5','6','7'):
         num1 = float(input("Enter first number: "))

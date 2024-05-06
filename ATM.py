@@ -1,9 +1,9 @@
 #mini projet on ATM
 '''
 1) set pin
-2)check balance
+2) check balance
 3) withdraw
-4)set pin
+4) set pin
 variables:  bal=0
             og_pin=None'''
 

@@ -1,4 +1,4 @@
-import cv2
+import cv2 
 from google.colab.patches import cv2_imshow
 from google.colab import files
 

@@ -30,7 +30,7 @@ def process_images(image_files):
 
         if image is None:
             print("Error: Unable to load image file:", filename)
-            continue
+            continue 
 
         detect_faces(image)
 

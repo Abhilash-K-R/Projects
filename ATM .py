@@ -1,4 +1,4 @@
-#mini projet on ATM
+#
 '''
 1) set pin
 2) check balance

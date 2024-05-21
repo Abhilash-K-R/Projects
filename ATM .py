@@ -7,7 +7,7 @@
 variables:  bal=0
             og_pin=None'''
 
-# creat set pin function
+# 
 bal=0
 og_pin=None
 

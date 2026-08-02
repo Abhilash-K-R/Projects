@@ -1,0 +1,20 @@
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.svg
+*.tiff
+*.ico
+
+# Ignore image files in input_images
+input_images/*
+
+# Ignore image files in output_images
+output_images/*
+
+# Keep the folders
+input_images/.gitkeep
+output_images/.gitkeep
